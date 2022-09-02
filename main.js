@@ -21,7 +21,7 @@ app.set("view engine","ejs"); //for dynamic content
 app.set("views",viewsPath);
 
 //variables
-var location="http://api.weatherstack.com/current?access_key=688f71630c400096e1cbbfa2ad8996c0&query=";
+//var location="http://api.weatherstack.com/current?access_key=688f71630c400096e1cbbfa2ad8996c0&query=";
 var city="";
 var country="";
 var temp=0.0;

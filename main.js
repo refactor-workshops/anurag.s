@@ -67,3 +67,11 @@ app.get("/error",(req,res)=>{
 })
 
 app.listen(port, () => console.log(`Server is running on http://localhost:`+port))
+
+function add(x, y = getZero(x)) { // ACCESS_INNER_FUNC_FROM_DEFAULT_PARAM alarm
+    function getZero(x) {
+        if (typeof x == "number") return 0;
+        else return "";
+    }
+    return x + y;
+}
